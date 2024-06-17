@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Mexi Wonders Travel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- Ajout du lien vers les icônes -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo.png.png" alt="logo Mexi Wonders" class="logo-img">
+        </div>
+        <nav class="navbar">
+            <ul class="nav-left">
+                <li><a href="#hotels">Hotels</a></li>
+                <li><a href="#sejours">Séjours</a></li>
+                <li><a href="#ventes-flash">Vente Flash</a></li>
+                <li><a href="#circuit">Circuit</a></li>
+            </ul>
+            <ul class="nav-right">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="images/Mexico.png.png" alt="Image Mexico" class="grande-image">
+        <div class="form-container">
+            <div class="input-container">
+                <label for="date-depart">Date de départ:</label>
+                <input type="date" id="date-depart" name="date-depart">
+            </div>
+            <div class="input-container">
+                <label for="date-retour">Date de retour:</label>
+                <input type="date" id="date-retour" name="date-retour">
+            </div>
+            <div class="input-container">
+                <label for="nombre-voyageurs">Nombre de voyageurs:</label>
+                <input type="number" id="nombre-voyageurs" name="nombre-voyageurs" min="1" value="1">
+                <button class="search-button">RECHERCHER</button>
+            </div>
+        </div>
+    </main>
+    <h2>Notre sélection de voyages</h2>
+    <p>Explorez nos itinéraires captivants à travers le Mexique puis partagez vos désirs et inspirations.</p>
+    <div class="image-container">
+        <div class="image-wrapper">
+            <img src="images/Yucatan.png" alt="Yucatan Image" class="image-default">
+            <img src="images/Yucatan_hover.png.png" alt="Yucatan Image Hover" class="image-hover">
+        </div>
+        <div class="image-wrapper">
+            <img src="images/Tulum.png" alt="Tulum Image" class="image-default">
+            <img src="images/Tulum_hover.png.png" alt="Tulum Image Hover" class="image-hover">
+            <button class="reserve-button">VOIR NOTRE SELECTION</button>
+        </div>
+        <div class="image-wrapper">
+            <img src="images/Playa del carmen.png" alt="Playa del Carmen Image" class="image-default">
+            <img src="images/Playa_del_Carmen_hover.png" alt="Playa del Carmen Image Hover" class="image-hover">
+        </div>
+    </div>
+    <div class="offres">
+        <h2>Nos offres</h2>
+    </div>
+    <div class="offres-container">
+        <p>Profitez de réductions sur nos offres.</p>
+    </div>
+        <div class="image-container">
+            <div class="image-wrapper2">
+                <img src="images/2.png" alt="Cancun sun Image" class="image-default">
+            </div>
+            <div class="image-wrapper2">
+                <img src="images/Islamujeres-sun.png" alt="Isla mujeres sun Image" class="image-default">
+            </div>
+            <div class="image-wrapper2">
+                <img src="images/3.png" alt="Playa del carmen sun Image" class="image-default">
+            </div>
+    </div>
+    <div class="button-container">
+        <button class="reserve-button">VOIR LES OFFRES</button>
+    </div>
+    <div class="circuit">
+    <h2>Circuit</h2>
+    </div>
+    <div class="Mexico-map">
+        <div class="map-container">
+        <p>Découvrez les merveilles du <em>Mexique</em> avec Mexi Wonders Travel.<br>Nous vous proposons des voyages sur-mesure pour explorer les régions emblématiques du <em>Yucatan</em>, de <em>Tulum</em> et de <em>Playa del Carmen</em>.<br>Ne savez-vous pas par où commencer pour découvrir ces trésors mexicains ?<br> Pour vous aider à créer le voyage qui vous ressemble, retrouvez ici les grandes destinations du Mexique, y compris le fascinant Yucatan, l'historique Tulum, et la vibrante Playa del Carmen.</p>
+        </div>
+            <div class="image-container">
+                <div class="image-wrapper2">
+                    <img src="https://images.unsplash.com/photo-1493508994801-b87b8970d035?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png" alt="Cenote Tulum" class="image-default">
+                </div>
+                <div class="image-wrapper2">
+                    <img src="https://images.unsplash.com/photo-1597397707886-3edda5413325?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png" alt="Statue Tulum" class="image-default">
+                </div>
+                <div class="image-wrapper2">
+                    <img src="https://images.unsplash.com/photo-1560424729-e7519277b60d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.png" alt="Bateaux activités" class="image-default">
+                </div>
+        </div>
+        <button class="aventure-button">EXPLOREZ LE MEXIQUE</button>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>A propos de nous</h4>
+                    <ul>
+                        <li><a href="#">Qui sommes-nous?</a></li>
+                        <li><a href="#">Mexi Wonders Travel</a></li>
+                        <li><a href="#">Nous rejoindre</a></li>
+                        <li><a href="#">Voyage d'affaires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Mexi Wonders Travel s'engage</h4>
+                    <ul>
+                        <li><a href="#">Contactez-nous</a></li>
+                        <li><a href="#">Espace presse</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Conditions</h4>
+                    <ul>
+                        <li><a href="#">Conditions de ventes</a></li>
+                        <li><a href="#">Espaces clients</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Radio Canada Big', sans-serif;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+.nav-left, .nav-right {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-left li, .nav-right li {
+    margin-right: 20px;
+}
+
+.nav-left li a, .nav-right li a {
+    text-decoration: none;
+    color: #11861d;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+
+.grande-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+label {
+  display: block;
+  margin-bottom: 0px;
+  font-weight: sans-serif;
+}
+
+input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 800px;
+  margin: auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-container label {
+  margin-bottom: 5px;
+  flex: 0 0 150px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+
+h2 {
+    color: green;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px; /* Espace ajusté entre le texte et les photos */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.image-wrapper, .image-wrapper2 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrapper img, .image-wrapper2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper .image-hover, .image-wrapper2 .image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.image-wrapper:hover .image-hover {
+    opacity: 1;
+}
+
+.image-wrapper:hover .image-default {
+    opacity: 0;
+}
+
+.reserve-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #EE4E4E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover {
+    background-color: #4993e2;
+}
+
+/* Ajout de la classe pour centrer le bouton */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Ajustez selon l'espace nécessaire */
+}
+
+.circuit {
+    color: green;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.offres {
+    color: green;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 20px;
+}
+
+.Mexico-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin: 20px 0; /* Ajustez la marge selon vos besoins */
+}
+
+/* Style pour l'image */
+.map-image {
+    margin-top: 30px;
+    width: 80%; /* Ajustez la largeur selon vos besoins */
+    max-width: 500px; /* Limite la taille de l'image */
+    height: auto;
+    margin-bottom: 20px; /* Espacement entre l'image et le bouton */
+}
+
+/* Style pour le bouton */
+.aventure-button {
+    padding: 10px 20px;
+    background-color: #EE4E4E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Espacement entre le bouton et le texte */
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+
+.aventure-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour le texte */
+.Mexico-map p {
+    max-width: 600px; /* Limite la largeur du paragraphe */
+    margin: 0 auto; /* Centre le texte */
+}
+
+.image-wrapper2 img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrapper2:hover img {
+    transform: scale(1.05); /* Zoom de 5% au survol */
+}
+
+.search-button {
+	padding: 10px 20px;
+	border-radius: 50px;
+	cursor: pointer;
+	border: 0;
+	background-color: blue;
+	box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 15px;
+	transition: all 0.5s ease;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin-bottom: 30px;
+}
